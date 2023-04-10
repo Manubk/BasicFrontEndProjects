@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- generated password display -->
+        <div id="out" class="input">
+           <input id="display" type="text" readonly>
+        </div>
+
+        <!-- uppercase checkbox  -->
+            <div class="input">
+            <div class="check">
+                <label for="upper">A</label>
+                <input id="upper" type="checkbox">
+            </div>
+       
+
+            <!-- lower case checkbox  -->
+           
+                <div class="check">
+                    <label for="lower">a</label>
+                    <input id="lower" type="checkbox">
+                </div>
+           
+
+            <!-- symbole checkbox  -->
+            
+                <div class="check">
+                    <label for="symbole">$</label>
+                    <input id="symbole" type="checkbox">
+                </div>
+            
+
+            <!-- number checkbox  -->
+                
+                    <div class="check">
+                        <label for="num">1</label>
+                        <input  id="num" type="checkbox">
+                    </div>
+
+                    <div class="check">
+                        <label for="length">length</label>
+                        <input type="number" min="6"  max="15" id="length" value="10">
+                    </div>
+            </div>
+            <div class="input">
+                <input type="button" id="generate" value="Generate">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
