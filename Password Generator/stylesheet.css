@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
  }
 
  body{
@@ -12,14 +13,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://wallpapers.com/images/high/glowing-space-4k-doodle-94tm2iky5gd5za7n.webp)
  }
 
  .container{
     background-color: aquamarine;
-    width: 300px;
-    height: auto;
+    width: 50%;
+    height: 30%;
     padding: 15px;
     border-radius: 6px;
+   
  }
 
  .input{
@@ -27,6 +30,9 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
  }
 
  .input  input{
@@ -34,9 +40,36 @@
     outline: none;
     padding: 5px;
     font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+   
  }
- label{
-    display: inline;
+ .display{
+   font-weight: 700;
+ }
+ label {
+   
+ }
+
+ i{
+   position: absolute; 
+   right: 20px;
+   cursor: pointer;
+ }
+
+ .tooltip{
+   position: absolute;
+   right: 20px;
+   color: #fff;
+   background-color: black;
+   padding: 10px 15px;ss
+  
+   
+   
+ }
+ .tooltip:hover{
+   top:-50%
+   
  }
  .check{
  font-size: 1.25rem;
@@ -44,7 +77,7 @@
  }
 
  #length{
-    width: 40px;
+    width: 50px;
     padding: 5px;
     display: block;
  }
